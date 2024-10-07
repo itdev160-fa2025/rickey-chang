@@ -1,29 +1,125 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    color: rgb(120, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-h1 {
-    color: rgb(120, 0, 0);
-    background-color: rgb(200, 125, 125);
+/* Header Styling */
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-img {
-    height: 300px;
-    text-align: left;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-figcaption span {
-    font-size: .85em;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
 }
 
-p#product-description {
-    margin: 20px 0 20px 0;
-    text-align: justify;
+nav ul li {
+    margin: 0 15px;
 }
 
-div.review {
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+#featured-languages ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#featured-languages li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
     padding: 10px;
-    background-color: rgb(200, 125, 125);
-    margin: 20px 0 20px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#featured-languages img {
+    max-width: 100px;
+    height: auto;
+}
+
+#featured-languages span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #35424a;
+}
+
+/* Latest News Styling */
+#latest-news {
+    margin-top: 40px;
+}
+
+#news-container {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #featured-languages ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #featured-languages li {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        position: static;
+    }
 }
